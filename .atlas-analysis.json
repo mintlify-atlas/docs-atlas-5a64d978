@@ -1,0 +1,119 @@
+{
+  "projectType": "saas",
+  "projectName": "SmartPost",
+  "projectDescription": "Social media management platform with WhatsApp integration, AI-powered automation, and multi-platform publishing",
+  "theme": "almond",
+  "primaryColor": "#00D97E",
+  "lightColor": "#33E199",
+  "darkColor": "#00A95F",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/social-media-management",
+              "features/whatsapp-integration",
+              "features/ai-automation",
+              "features/post-scheduling",
+              "features/analytics"
+            ]
+          },
+          {
+            "group": "Platform Guides",
+            "pages": [
+              "guides/connecting-accounts",
+              "guides/creating-posts",
+              "guides/whatsapp-bot",
+              "guides/scheduling",
+              "guides/viewing-analytics"
+            ]
+          },
+          {
+            "group": "Subscription & Billing",
+            "pages": [
+              "subscription/plans",
+              "subscription/billing",
+              "subscription/upgrading"
+            ]
+          },
+          {
+            "group": "Deployment",
+            "pages": [
+              "deployment/architecture",
+              "deployment/docker-setup",
+              "deployment/environment-variables",
+              "deployment/database-setup"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "api/overview",
+              "api/authentication"
+            ]
+          },
+          {
+            "group": "Endpoints",
+            "pages": [
+              "api/conversations",
+              "api/messages",
+              "api/contacts",
+              "api/stats",
+              "api/bot-sessions"
+            ]
+          },
+          {
+            "group": "Database Schema",
+            "pages": [
+              "api/schema/users",
+              "api/schema/posts",
+              "api/schema/social-accounts"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Multi-platform social media publishing (Facebook, Instagram, LinkedIn)",
+    "WhatsApp Business integration with AI chatbot",
+    "Post scheduling and management",
+    "Real-time analytics and engagement metrics",
+    "Subscription-based pricing with Stripe integration",
+    "n8n automation workflows",
+    "Contact and conversation management",
+    "User authentication with NextAuth"
+  ],
+  "publicApiSurface": [
+    "POST /api/login",
+    "GET /api/conversations",
+    "GET /api/conversations/:id/messages",
+    "GET /api/stats",
+    "GET /api/contacts",
+    "GET /api/bot-sessions",
+    "GET /api/bot-sessions/:sessionId",
+    "POST /api/stripe/checkout",
+    "POST /api/stripe/portal",
+    "GET /api/stripe/subscription",
+    "POST /api/webhooks/stripe",
+    "POST /api/auth/callback/facebook",
+    "POST /api/auth/callback/linkedin",
+    "POST /api/auth/disconnect"
+  ]
+}
